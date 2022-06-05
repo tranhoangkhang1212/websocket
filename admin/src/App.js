@@ -15,11 +15,17 @@ function App() {
     });
   };
 
+  const handleKeyPress = (e) => {
+    if (e.key === "Enter") {
+      handleClick();
+    }
+  };
+
   return (
     <div className="App">
       <h1>Admin</h1>
-      <input type="text" ref={inputRef} />
-      <button onClick={handleClick}>Click me!</button>
+      <input type="text" ref={inputRef} onKeyPress={handleKeyPress} />
+      <button onClick={handleClick}>Send</button>
     </div>
   );
 }
