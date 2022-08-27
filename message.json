@@ -1,0 +1,10 @@
+{
+  "errorMessage": {
+    "response": "Internal server error",
+    "client": "Please try again!"
+  },
+  "successMessage": {
+    "loginSuccess": "You logged successful!",
+    "deleteSuccess": "You delete this message successful"
+  }
+}
